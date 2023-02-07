@@ -29,23 +29,15 @@ function startGame() {
         e.preventDefault();
         switch (e.key) {
             case "ArrowLeft":
-                directionX = 0;
-                directionY = -1;
                 verifyMovement(headPositionX, (headPositionY - 1));
                 break;
             case "ArrowUp":
-                directionX = -1;
-                directionY = 0;
                 verifyMovement((headPositionX - 1), headPositionY);
                 break;
             case "ArrowRight":
-                directionX = 0;
-                directionY = 1;
                 verifyMovement(headPositionX, (headPositionY + 1));
                 break;
             case "ArrowDown":
-                directionX = 1;
-                directionY = 0;
                 verifyMovement((headPositionX + 1), headPositionY);
                 break;
         }
